@@ -1,0 +1,120 @@
+nav{
+    width: 100%;
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    -webkit-box-shadow: 1px 6px 11px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 1px 6px 11px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 1px 6px 11px 0px rgba(34, 60, 80, 0.2);
+
+}
+.navbar{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.menu{
+    max-width: 647px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.lists{
+    max-width: 429px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart{
+    max-width: 293px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    justify-content: space-between;
+}
+.cart button{
+    max-width: 174px;
+    width: 100%;
+    height: 100%;
+    background-color:#0075FF;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    /* font-family: 'Roboto'; */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+}
+.nonebtn{
+    display: none;
+}
+@media(max-width:576px){
+    .navbar{
+        flex-wrap: nowrap;
+    }
+    .menu img{
+        max-width: 125px;
+        width: 100%;
+        height: auto;
+    }
+    .menu{
+        /* flex-direction: column; */
+        justify-content: space-around;
+    }
+    .lists{
+        flex-direction: column;
+        background-color: #0075FF;
+        height: 100vh;
+        position: absolute;
+        top: 52px;
+        left: -300px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        max-width: 290px;
+    }
+    .togl{
+        flex-direction: column;
+        background-color: #6E7191;
+        height: 100vh;
+        position: absolute;
+        top: 52px;
+        left: -10px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+        max-width: 290px; 
+        width: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 35px;
+        transition: 0.7s;
+    }
+    .nonebtn{
+        display: block;
+        background-color: white; border: none;
+        font-size: 20px;
+    }
+    .lists li{
+        font-size: 35px;
+    }
+    .cart{
+        display: none;
+    }
+}
